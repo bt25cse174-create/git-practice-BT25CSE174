@@ -1,4 +1,4 @@
-echo "enter the name of file without extension"
+echo "enter the name of file with extension"
 read file
 
 touch $file
