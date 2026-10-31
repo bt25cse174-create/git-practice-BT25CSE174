@@ -8,25 +8,25 @@ read op
 case $op in
     '+')
         result=$((a + b))
-        echo "Result: $result"
+        echo "Result: $result" >> output.txt
         ;;
     '-')
         result=$((a - b))
-        echo "Result: $result"
+        echo "Result: $result" >> output.txt
         ;;
     '*')
         result=$((a * b))
-        echo "Result: $result"
+        echo "Result: $result" >> output.txt
         ;;
     '/')
         if [ $b -ne 0 ]; then
             result=$((a / b))
-            echo "Result: $result"
+            echo "Result: $result" >> output.txt
         else
-            echo "Error: Division by zero is not allowed."
+            echo "Error: Division by zero is not allowed." >> output.txt
         fi
         ;;
     *)
-        echo "Error: Invalid operation."
+        echo "Error: Invalid operation." >> output.txt
         ;;
 esac

@@ -7,4 +7,4 @@ for (( i=0; i<e ; i++ ))
 do
     result=$((result * b))
 done
-echo "Result: $result"
+echo "Result: $result" >> output.txt
