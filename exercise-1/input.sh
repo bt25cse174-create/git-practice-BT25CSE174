@@ -1,7 +1,8 @@
+echo "Enter your name:"
 read n
 
 if [ -z "$n" ]; then
-    echo "Hello User" >> output.txt
+    echo "Hello User" > "$(dirname "$0")/output.txt"
 else
-    echo "Hello $n" >> output.txt
+    echo "Hello $n" > "$(dirname "$0")/output.txt"
 fi
